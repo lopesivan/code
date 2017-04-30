@@ -1,0 +1,40 @@
+{
+  "code": {
+    "type": "main"
+  },
+
+  "modules/*.sh": {
+    "type": "modules",
+    "skeleton": "modules"
+  },
+
+  "tasks/*.sh": {
+    "type": "tasks",
+    "skeleton": "tasks"
+  },
+
+  "tests/*.sh": {
+    "type": "tests",
+    "skeleton": "tests"
+  },
+
+  "modules/config.sh": {
+    "skeleton": "module_config"
+  },
+
+  "tasks/commands.sh": {
+    "skeleton": "task_commands"
+  },
+  "tasks/init.sh": {
+    "skeleton": "task_init"
+  },
+
+  "tests/tasks/commands_test.sh": {
+    "skeleton": "task_test_commands"
+  },
+
+  "tests/tasks/*_test.sh": {
+    "skeleton": "task_test"
+  }
+
+}
