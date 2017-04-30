@@ -1,0 +1,97 @@
+{
+  "id":{
+    "version": "2.1",
+    "name": "code"
+  },
+  "code": [
+    {
+      "command": "commands",
+      "description": "lista todas as tasks/comandos"
+    },
+    {
+      "command": "bash",
+      "description": "ativa o modo bash"
+    },
+    {
+      "command": "c",
+      "description": "ativa o modo c"
+    },
+    {
+      "command": "chef",
+      "description": "ativa o modo chef"
+    },
+    {
+      "command": "cpp",
+      "description": "ativa o modo cpp"
+    },
+    {
+      "command": "go",
+      "description": "ativa o modo go"
+    },
+    {
+      "command": "gof",
+      "description": "ativa o modo gof"
+    },
+    {
+      "command": "java",
+      "description": "ativa o modo java"
+    },
+    {
+      "command": "js",
+      "description": "ativa o modo js"
+    },
+    {
+      "command": "latex",
+      "description": "ativa o modo latex"
+    },
+    {
+      "command": "perl",
+      "description": "ativa o modo perl"
+    },
+    {
+      "command": "python",
+      "description": "ativa o modo python"
+    },
+    {
+      "command": "ruby",
+      "description": "ativa o modo ruby"
+    },
+    {
+      "command": "rust",
+      "description": "ativa o modo rust"
+    },
+    {
+      "command": "server",
+      "description": "ativa o modo server"
+    },
+    {
+      "command": "template",
+      "description": "ativa o modo template"
+    },
+    {
+      "command": "vim",
+      "description": "ativa o modo vim"
+    },
+    {
+      "command": "cir",
+      "description": "ativa o modo cir"
+    },
+    {
+      "command": "dark",
+      "description": "ativa o modo de cores dark"
+    },
+    {
+      "command": "light",
+      "description": "ativa o modo de cores light"
+    },
+    {
+      "command": "web",
+      "description": "ativa o modo web"
+    },
+    {
+      "command": "zero",
+      "description": "ativa o modo zero"
+    }
+  ]
+}
+

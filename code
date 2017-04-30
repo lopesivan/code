@@ -1,0 +1,122 @@
+b.module.require opt
+
+b.module.require options
+b.module.require config
+b.module.require exception
+b.module.require repo
+
+function try_again () {
+    echo \
+    "Ocorreu um erro, verifique o output ou rode os testes para descobrir o erro"
+}
+
+# Run!
+function run () {
+
+    if ! code.config.load; then
+        return 1
+    fi
+
+    if ! code.repo.load; then
+        return 1
+    fi
+
+    if [ -n "$1" ]; then
+
+        case x$1 in
+        xinit)
+            b.task.run "$@"
+        ;;
+        xdark)
+            b.task.run "$@"
+        ;;
+        xlight)
+            b.task.run "$@"
+        ;;
+        xbash)
+            b.task.run "$@"
+        ;;
+        xcir)
+            b.task.run "$@"
+        ;;
+        xc)
+            b.task.run "$@"
+        ;;
+        xchef)
+            b.task.run "$@"
+        ;;
+        xcpp)
+            b.task.run "$@"
+        ;;
+        xgo)
+            b.task.run "$@"
+        ;;
+        xgoal)
+            b.task.run "$@"
+        ;;
+        xgof)
+            b.task.run "$@"
+        ;;
+        xjava)
+            b.task.run "$@"
+        ;;
+        xjs)
+            b.task.run "$@"
+        ;;
+        xlatex)
+            b.task.run "$@"
+        ;;
+        xlicense)
+            b.task.run "$@"
+        ;;
+        xperl)
+            b.task.run "$@"
+        ;;
+        xpython)
+            b.task.run "$@"
+        ;;
+        xreadme)
+            b.task.run "$@"
+        ;;
+        xruby)
+            b.task.run "$@"
+        ;;
+        xrust)
+            b.task.run "$@"
+        ;;
+        xserver)
+            b.task.run "$@"
+        ;;
+        xtemplate)
+            b.task.run "$@"
+        ;;
+        xvim)
+            b.task.run "$@"
+        ;;
+        xweb)
+            b.task.run "$@"
+        ;;
+        xzero)
+            b.task.run "$@"
+        ;;
+        xcommands)
+            b.task.run "$@"
+        ;;
+        x*)
+            b.task.run "default" "$@"
+        ;;
+        esac
+    else
+        b.task.run "usage"
+    fi
+}
+
+b.try.do run "$@"
+b.catch FileNotFoundException xp.exception.file_not_found
+b.catch FileNotFoundException xp.exception.folder_not_found
+b.catch StringIsNullException xp.exception.string_is_null
+b.catch FileNotFoundException xp.exception.repo_has_changes
+b.finally try_again
+#b.try.end
+
+# vim: set ts=4 sw=4 tw=78 ft=sh:
